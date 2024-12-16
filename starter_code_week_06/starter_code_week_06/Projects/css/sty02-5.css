@@ -1,0 +1,123 @@
+.seaweed-script-regular {
+    font-family: "Seaweed Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .playwrite-in-guides-regular {
+    font-family: "Playwrite IN Guides", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+/* 全局样式 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Playwrite IN Guides", cursive;
+    background-color: #74e900; /* 背景 */
+    padding-top: 60px; /* 为导航栏留出空间 */
+}
+
+/* 顶部导航栏样式 */
+.top-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent; /* 白色背景 */
+    z-index: 1000;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+}
+
+.top-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-nav ul li {
+    margin: 0 20px;
+}
+
+.top-nav ul li a {
+    color: rgb(209, 0, 122);
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Seaweed Script', cursive;
+}
+
+.top-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* 图片网格布局 */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 三列布局 */
+    gap: 20px;
+    padding: 20px;
+}
+
+.image-item {
+    position: relative;
+    text-align: left-align;
+    overflow: hidden; /* 隐藏超出部分 */
+    cursor: pointer; /* 鼠标悬停时显示手型光标 */
+}
+
+.image-item img {
+    width: 60%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease; /* 添加过渡效果 */
+}
+
+.image-item:hover img {
+    transform: scale(1.05); /* 鼠标悬停时放大图片 */
+}
+
+.title {
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: "Playwrite IN Guides", cursive;
+    font-size: 10px;
+    color: rgb(209, 0, 122);
+}
+
+.subtitle {
+    margin-top: 5px;
+    font-family: "Playwrite IN Guides", cursive;
+    font-size: 8px;
+    color: rgb(209, 0, 122);
+}
+
+/* 悬停内容样式 */
+.hover-content {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0, 34, 255); /* 蓝色背景，透明度0.8 */
+    color: rgb(238, 198, 0);
+    font-size: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 30;
+    width: 40%;
+    text-align: left;
+}
+
+/* 悬停效果 */
+.image-item:hover .hover-content {
+    display: block;
+}
+
+
+body{
+    background-color: #74e900; /* 背景 */
+}
